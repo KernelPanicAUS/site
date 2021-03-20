@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap&family=Audiowide&family=Playball&family=Markazi+Text:wght@400;500;600;700");
-
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 
 :root {
   --primary-color: #596b79;
   --accent-color: #cc6e6e;
 }
+
 a {
   text-decoration: none;
   color: var(--primary-color);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -25,20 +26,18 @@ body {
     )
     fixed;
 }
+
 nav {
   position: relative;
   width: 100%;
   box-sizing: border-box;
   padding-top: 1.8vw;
-  /*   margin-bottom: 1.8vw; */
   padding-left: 6vw;
   padding-right: 6vw;
   display: flex;
   align-items: center;
-  width: 100%;
-  /*   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
-  /*   background: white; */
 }
+
 nav ul.left {
   display: flex;
   flex-wrap: nowrap;
@@ -68,8 +67,7 @@ nav ul li {
 
 header .container {
   width: 100%;
-  margin: auto;
-  margin-top: 4vh;
+  margin: 4vh auto auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,16 +110,14 @@ header h4 {
   color: var(--accent-color);
   font-size: 5rem;
   margin-top: 1.5rem;
-  /*   white-space: nowrap; */
 }
 
 header .container > img {
   display: block;
-  margin: auto;
   border-radius: 50%;
   overflow: hidden;
-  margin-top: 3rem;
-  width: 20rem;
+  margin: 3rem auto auto;
+  width: 25vw;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -129,10 +125,10 @@ header .container > img {
 
 footer {
   height: 100%;
-  margin: auto;
-  margin-top: 3em;
+  margin: 3em auto auto;
   background: black;
 }
+
 footer h5 {
   display: flex;
   color: ivory;
@@ -140,7 +136,6 @@ footer h5 {
   padding-bottom: 1em;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
 }
 
 footer .container {
@@ -167,9 +162,35 @@ footer div a {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 780px) {
+  nav {
+    display: none;
+  }
+
   footer .container {
     margin: auto;
     max-width: 30%;
+  }
+
+  header .container > img {
+    margin: 2rem auto auto;
+    width: 50vw;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header h2 {
+    font-size: 2rem;
+    padding-top: 3rem;
+  }
+
+  header h4 {
+    font-size: 2.5rem;
+  }
+
+  footer h5 {
+    font-size: 1rem;
   }
 }
