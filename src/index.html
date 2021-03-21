@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
   <body>
-    <nav>
+    <nav class="desktop">
       <ul class="left">
         <li><a class="header-link">Home</a></li>
         <li><a class="header-link">About</a></li>
@@ -24,9 +24,17 @@
       </ul>
     </nav>
 
+    <nav class="mobile">
+      <div>
+        <a class="menu fas fa-bars"></a>
+      </div>
+    </nav>
+
     <header class="hero-top">
       <div class="container">
-        <h1>Hi, I'm Thomas 👋</h1>
+        <h1 class="desktop">Hi, I'm Thomas 👋</h1>
+        <h1 class="mobile">Hi,</h1>
+        <h1 class="mobile">I'm Thomas 👋</h1>
         <img
           src="https://res.cloudinary.com/practicaldev/image/fetch/s--03hB2QfH--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/274950/f2a1d050-998a-4a36-bcf5-d5091ca78817.JPG"
           alt="Profile image of Thomas Khalil."
